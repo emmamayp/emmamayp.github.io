@@ -7,7 +7,7 @@ export const ProjectList = [
     {
         name: "Portfolio Project",
         image: Img1,
-        link: "https://github.com/emmamayp/portfolio-project.github.io"
+        link: "https://github.com/emmamayp/emmamayp.github.io"
     },
     {
         name: "HTML & CSS - CV project",        
