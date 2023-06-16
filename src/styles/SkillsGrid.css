@@ -1,0 +1,10 @@
+.grid-item { 
+    box-shadow: 0px transparent;
+    border: 0px transparent;    
+  }
+  .skills-txt {
+    font-size: var(--fs-300);
+    word-wrap:break-word;
+    font-family: var(--ff-base);  
+    font-weight: var(--fw-bold);
+  }

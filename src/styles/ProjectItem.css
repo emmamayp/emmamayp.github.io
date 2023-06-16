@@ -1,0 +1,78 @@
+.projectItem {
+    border-radius: 15px;
+    width: 300px;
+    /* height: 300px; */
+    margin: 40px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #393444; 
+  }
+  .projectItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;    
+  }
+  
+  .projectItem .bgImage {              
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 800px) {    
+    .projectItem {
+      width: 300px;
+      height: 300px;
+    }    
+  }
+
+.container {        
+    position: relative;
+    width: 100%;       
+}
+
+  .container:before {
+    /* empty pseudo */
+    content: '';
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* start transparent, include a transition bcuz */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
+    /* covers the whole div */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  .container:hover:before {
+    opacity: 1;
+  }
+
+  .btn {      
+    cursor: pointer;
+    z-index: 3;    
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  .container:hover .btn {
+    opacity: 1;
+  }
+  
+
+
+  
